@@ -106,7 +106,6 @@ public class Main {
             }else{
                 next.add(new Range((current.start - sourceStart) + relevantMap.get(j).destination, (relevantMap.get(j).destination + length) - 1));
                 addNext(relevantMap, new Range(relevantMap.get(j).source + length, current.finish));
-                if(current.finish < relevantMap.get(j).source + length) System.out.println("AAAAAAA");
             }
         }
     }
